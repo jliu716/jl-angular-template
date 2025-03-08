@@ -1,0 +1,23 @@
+<h1>Roboto-v47</h1>
+<table id="font-test">
+   <thead>
+      <tr>
+         <th>font-weight</th>
+         <th>test</th>
+         <th>rendered font family name</th>
+         <th>font style</th>
+         <th>rendered post script font name</th>
+      </tr>
+   </thead>
+   <tbody>
+      <ng-container *ngFor="let font of fonts">
+         <tr [class]="'rendered-font font-' + font.weight" [style]="'font-weight:' + font.weight">
+            <td>{{ font.weight }}</td>
+            <td>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</td>
+            <td class="rendered-font-family-name">{{ font.familyName }}</td>
+            <td class="font-style">{{ font.style }}</td>
+            <td class="post-script-font-name">{{ font.postScriptName }}</td>
+         </tr>
+      </ng-container>
+   </tbody>
+</table>
