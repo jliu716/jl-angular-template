@@ -27,15 +27,7 @@
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "less",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets",
-              {
-                "glob": "roboto-latin-*.woff2",
-                "input": "./node_modules/@fontsource/roboto/files",
-                "output": "./assets/fonts/"
-              }
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.less"],
             "scripts": []
           },
