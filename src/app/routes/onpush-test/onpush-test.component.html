@@ -1,0 +1,20 @@
+<div class="v-flex">
+   <div class="h-flex">
+      <p>is manually detecting changes: </p>
+      <div class="yes-or-no">
+         <input type="radio" name="detectChanges" [value]="true" [(ngModel)]="shouldDetectChanges"> Yes
+         <input type="radio" name="detectChanges" [value]="false" [(ngModel)]="shouldDetectChanges"> No
+      </div>
+   </div>
+
+   <div class="h-flex">
+      <button (click)="doNothing()">fire user interaction</button>
+      <button (click)="fire(5)">fire programmatic changes</button>
+   </div>
+
+   <div class="v-flex">
+      <div *ngFor="let item of numbers">
+         {{item}}
+      </div>
+   </div>
+</div>
