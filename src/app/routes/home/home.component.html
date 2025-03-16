@@ -1,0 +1,7 @@
+<div class="v-flex">
+   <button (click)="fire(5)">fire changes from parent component</button>
+   <div class="h-flex boxes">
+      <app-onpush-test [numbers]="numbers"></app-onpush-test>
+      <app-default-test [numbers]="numbers"></app-default-test>
+   </div>
+</div>
