@@ -21,7 +21,7 @@
               "base": "docs",
               "browser": ""
             },
-            "baseHref": "/",
+            "baseHref": "/jl-angular-template/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
